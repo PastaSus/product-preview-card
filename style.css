@@ -78,6 +78,10 @@ h6 {
   margin-right: 40px;
 }
 
+.footercart:hover {
+  background-color: hsl(158, 76%, 11%); 
+}
+
 svg {
   margin-left: 60px;/* Add any specific SVG styles */
 }
