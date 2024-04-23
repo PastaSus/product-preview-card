@@ -1,0 +1,211 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.fraunces {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+:root {
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+
+
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+
+html,
+body {
+  position: relative;
+  /* height: 100%; */
+  background-color: var(--Cream);
+  /* Update */
+  height: 100vh;
+
+}
+
+
+
+/* Add styles for your elements */
+p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  margin-right: 40px;
+}
+
+h1 {
+  color: var(--Very-dark-blue);
+  font-family: "Fraunces", serif;
+  line-height: 1;
+}
+
+.h1price {
+  color: var(--Dark-cyan);
+}
+
+h6 {
+  text-decoration: line-through;
+  color: var(--Dark-grayish-blue);
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.pricetags {
+  display: flex;
+  align-items: center;
+}
+
+.footercart {
+  background-color: var(--Dark-cyan);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+svg {
+  margin-left: 60px;/* Add any specific SVG styles */
+}
+
+.addtocart {
+  display: inline-block;
+  color: var(--White);
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.innercontentimg img{
+  height: 436px;
+ /* Adjust the height as needed */
+  display: flex;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#image-product-mobile {
+  display: none;
+}
+
+.innercontent2 {
+  border-radius: 10px;
+  margin-top: 10px;
+   /* Add some padding for better spacing */
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Update: moved bg white here */
+  background-color: var(--White);
+  text-align: left;
+  justify-content: center;
+  gap: 30px;
+  border-radius: 10px;
+}
+
+.contentcontainer {
+  /* Update: changed to flex to center content instead of position absolute */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 590px;
+  /* Update: made height 100% so flex would work when centering vertically*/
+  height: 100%;
+  margin: 0px auto;
+   /* Ensure it doesn't overflow on smaller screens */
+   /* Add a specific height to contain the content,Adjust the height as needed */
+ /* Hide any overflow content */
+}
+
+
+@media screen and (max-width:425px) {
+  html,
+  body {
+  margin: 0px;
+  }
+
+  #perfume {
+    margin-bottom: 0px;
+  }
+
+  #perfumename {
+    margin-top: 10px;
+  }
+
+  p {
+    margin-right: 0px;
+  }
+
+  .footercart {
+    margin-right: 0px;
+    padding-right: 30px;
+    
+  }
+
+  svg {
+    margin-left: 88px;/* Add any specific SVG styles */
+  }
+  
+  .addtocart {
+    display: inline-block;
+    color: var(--White);
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+
+  .innercontentimg img{
+    display: none;
+  }
+
+  #image-product-mobile {
+    display: block;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+    height: 250px; /* Adjust the height as needed */
+    width: 340px;
+  }
+
+  .innercontent2 {
+    margin: 20px ;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    gap: 0px;
+    height: 640px;
+  }
+
+
+
+
+  .contentcontainer {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    
+  }
+}
